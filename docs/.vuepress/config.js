@@ -1,6 +1,7 @@
 const { description } = require('../../package')
 
 module.exports = {
+  base: '/blog-web/',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
@@ -39,13 +40,29 @@ module.exports = {
         link: '/web/',
       },
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: '后端',
+        link: '/bigData/',
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Git',
+        link: '/git/',
       },
+      {
+        text: '安装',
+        link: '/install/',
+      },
+      {
+        text: '其他',
+        link: '/other/',
+      },
+      // {
+      //   text: 'Guide',
+      //   link: '/guide/',
+      // },
+      // {
+      //   text: 'Config',
+      //   link: '/config/'
+      // },
       // {
       //   text: 'VuePress',
       //   link: 'https://v1.vuepress.vuejs.org'
@@ -68,7 +85,78 @@ module.exports = {
           collapsable: false,
           children: [
             '',
+            'vue',
             'vuepress',
+            'webpack',
+            'javascript-base',
+            'promise',
+            'node',
+            'log4js',
+            'npm',
+            'flex',
+            'security',
+            'optimize',
+            'other',
+          ]
+        }
+      ],
+      '/bigData/': [
+        {
+          title: '后端技术总结',
+          collapsable: false,
+          children: [
+            '',
+            'mysql',
+            'redis',
+            'es',
+            'kylin',
+            'hybrid',
+            'python',
+            'pandas',
+            'django',
+            'linux',
+            'nginx',
+            'aws-s3',
+            'hive',
+            'hdfs',
+            'hbase',
+            'spark',
+            'luigi',
+            'scala',
+          ]
+        }
+      ],
+      '/install/': [
+        {
+          title: '安装',
+          collapsable: false,
+          children: [
+            '',
+            'mac',
+            'zsh',
+            'vs-code',
+            'sublime',
+            'atom',
+            'mac-redis',
+            'mac-scala',
+            'mac-maven',
+            'mac-virtualbox',
+            'python',
+            'screen',
+            'gitbook',
+            'virtualbox',
+          ]
+        }
+      ],
+      '/other/': [
+        {
+          title: '其他',
+          collapsable: false,
+          children: [
+            '',
+            'navicate',
+            'excel',
+            'xmind',
           ]
         }
       ],
