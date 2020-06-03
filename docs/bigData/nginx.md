@@ -4,6 +4,13 @@
 - [资料2](http://www.oschina.net/translate/nginx-setup)
 - [资料3](http://www.ha97.com/5194.html)
 
+## 命令
+```sh
+# 重启
+service nginx restart
+# 热更新
+nginx -s reload
+```
 
 ## 顶级配置
 ```sh

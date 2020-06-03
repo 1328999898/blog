@@ -4,6 +4,7 @@
 
 - [vuejs github](https://github.com/vuejs)
 - [Vue官网](https://cn.vuejs.org/)
+- [Vue源码](https://github.com/vuejs/vue)
 - [Vue CLI官网](https://cli.vuejs.org/zh/guide/mode-and-env.html)
 - [Vue Router官网](https://router.vuejs.org/zh/guide/)
 - [Vuex官网](https://vuex.vuejs.org/zh/guide/)
@@ -13,6 +14,11 @@
 - [element-ui官网](https://element.eleme.cn/#/zh-CN/component/installation)
 - [webpack官网](https://webpack.docschina.org/guides/getting-started/)
 - [prismjs官网](https://prismjs.com/)
+- [mockjs官网](http://mockjs.com/)
+- [axios源码](https://github.com/axios/axios)
+- [管理多个Node版本 nvm](https://github.com/nvm-sh/nvm)
+- [管理多个Node版本 nvm-windows](https://github.com/coreybutler/nvm-windows)
+
 
 ## 说明
 - 用于构建用户界面的渐进式框架
@@ -44,6 +50,6 @@
 
 [参考文档](https://juejin.im/post/5aae19aa6fb9a028d4445d1a)
 
-- 不推荐使用数组的下标作为keys
+- 不推荐使用数组的下标作为key
 - Diff算法
 

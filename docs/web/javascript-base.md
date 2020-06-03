@@ -100,6 +100,33 @@ var merged = new Map([...first, ...second]);
 ]"
 ```
 
+
+## 5. 对象
+```js
+const test = {a: 'a1', b: 'b1'};
+// 获取key的列表
+Object.keys(test) // => ["a", "b"]
+// 获取value的列表
+Object.values(test) // => ["a1", "b1"]
+// 遍历
+for (let key in test) {
+  console.log(key, test[key])
+}
+```
+
+## 6. 字符串转数字
+```js
+const a = '123';
+parseInt(a);   // => 123  整数，没有基数
+parseInt(a, 8);   // => 83  整数，基数为8
+parseFloat(a);  // => 124  浮点数
+Number(a);      // => 123
+~~a;            // => 123
+a*1;            // => 123
+a/1;            // => 123
+
+```
+
 ## 其他
 ```js
 let lang = navigator.language;  // 通常指浏览器的语言

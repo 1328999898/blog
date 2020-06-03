@@ -4,6 +4,13 @@
 - [nodejs官网](http://nodejs.cn/api/)
 - [expressjs官网](https://expressjs.com/zh-cn/)
 
+## 常用的数据返回格式
+
+- res.json() 以json的形式返回数据
+- res.render()
+- res.send()
+- res.redirect()
+
 
 ## 其他
 
