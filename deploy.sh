@@ -1,27 +1,23 @@
-# #!/usr/bin/env sh
+#!/usr/bin/env sh
 
-cp -r blog/docs/.vuepress/dist/* blog-web
+# 当发生错误时中止脚本
+set -e
 
-# # 确保脚本抛出遇到的错误
-# set -e
+# 构建
+npm run build
 
-# # 生成静态文件
-# npm run docs:build
+# push到master
+git add .
+git commit -m 'update'
+# 部署到 https://<USERNAME>.github.io
+git push -f https://github.com/1328999898/blog.git master
 
-# # 进入生成的文件夹
-# cd docs/.vuepress/dist
+# cd 到构建输出的目录下 
+cd docs/.vuepress/dist
+git init
+git add -A
+git commit -m 'deploy'
+# 部署到 https://<USERNAME>.github.io/<REPO>
+git push -f https://github.com/1328999898/blog.git master:gh-pages
 
-# # 如果是发布到自定义域名
-# # echo 'www.example.com' > CNAME
-
-# git init
-# git add -A
-# git commit -m 'deploy'
-
-# # 如果发布到 https://<USERNAME>.github.io
-# # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
-
-# # 如果发布到 https://<USERNAME>.github.io/<REPO>
-# # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
-
-# cd -
+cd -
