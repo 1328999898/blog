@@ -35,3 +35,45 @@ npx webpack
 yarn add webpack-dev-server -D
 ```
 
+
+### 核心
+- entry 入口，内部依赖图的开始
+- output  出口
+- loader  webpack自身只理解JavaScript，可以通过loader，让webpack处理非JavaScript文件。
+- plugins 打包优化、压缩、重新定义环境中的变量
+
+loader
+本质上，webpack-loader将所有类型的文件，转化为应用程序的依赖图可以直接引用的模块
+链式传递
+- test: 标识出应该被对应的loader转换的某个或某些文件
+- use: 标识进行转换时，应该使用哪个loader
+
+
+webpack
+静态模块打包器(module bundle)
+将应用程序需要的模块递归的构建一个依赖关系图，然后将这些模块打包成一个或多个bundle
+
+
+多页面应用： 每当页面跳转时，服务器将为你获取一个新的HTML文档，页面重新加载新文档，并且资源被重新下载
+
+单页面应用
+```js
+const config = {
+  entry: './path/to/my/entry/file.js'
+};
+module.exports = config;
+```
+
+多页面应用
+```js
+const config = {
+  entry: {
+    pageOne: './src/pageOne/index.js',
+    pageTwo: './src/pageTwo/index.js',
+    pageThree: './src/pageThree/index.js'
+  }
+};
+```
+
+
+

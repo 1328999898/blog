@@ -1,5 +1,12 @@
 # Introduction
 
+## 网址收藏
+- [正则可视化](https://jex.im/regulex)
+- [CSS字体](https://www.cssfontstack.com/)
+- [字体天下](http://www.fonts.net.cn/)
+- [设计师网址导航](https://hao.uisdc.com/)
+- [flatuicolors](https://flatuicolors.com/)
+
 ## 技能清单
 ::: tip
 - vue

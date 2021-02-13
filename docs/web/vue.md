@@ -18,7 +18,7 @@
 - [axios源码](https://github.com/axios/axios)
 - [管理多个Node版本 nvm](https://github.com/nvm-sh/nvm)
 - [管理多个Node版本 nvm-windows](https://github.com/coreybutler/nvm-windows)
-
+- [xlsx js](https://github.com/SheetJS/sheetjs#utility-functions)
 
 ## 说明
 - 用于构建用户界面的渐进式框架

@@ -40,6 +40,10 @@ module.exports = {
         link: '/web/',
       },
       {
+        text: 'VUE',
+        link: '/vue/',
+      },
+      {
         text: '后端',
         link: '/bigData/',
       },
@@ -93,8 +97,11 @@ module.exports = {
             'http',
             'https',
             'agency',
+            'axios',
             'javascript-base',
+            'js-regexp',
             'js-task',
+            'cross-domain',
             'map-reduce',
             'promise',
             'vuepress',
@@ -103,11 +110,23 @@ module.exports = {
             'log4js',
             'npm',
             'flex',
+            'monaco',
             'security',
             'optimize',
+            'restful-api',
             'other',
           ]
         }
+      ],
+      '/vue/' : [
+        {
+          title: 'VUE',
+          collapsable: false,
+          children: [
+            '',
+            'setInterval',
+          ]
+      }
       ],
       '/bigData/': [
         {

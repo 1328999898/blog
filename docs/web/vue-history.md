@@ -6,7 +6,7 @@
 
 ## 两种模式
 - hash: 默认，hash模式(地址栏中会有`#`号)，使用URL的hash模拟一个完整的URL，当URL改变时，页面不会重新加载
-- history: 可以利用history.pushStateAPI来完成URL跳转而无需重新加载页面
+- history: 可以利用`history.pushState`API来完成URL跳转而无需重新加载页面
 
 ## history模式配置(基于nginx)
 
