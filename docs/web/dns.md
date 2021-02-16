@@ -7,9 +7,9 @@
 ### 2. 本地域名解析
 ```
 ➜  vim /etc/hosts
-34.234.125.240 liveme.bi.ksmobile.net
+IP 域名
 ```
 输入域名可以直接访问到地址
-http://liveme.bi.ksmobile.net
+http://域名
 
 ### 3. 
