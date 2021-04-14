@@ -210,3 +210,30 @@ git pull origin master --allow-unrelated-histories
 - [参考文档](https://blog.csdn.net/lindexi_gd/article/details/52554159)
 
 
+## 六、提交工作流钩子
+> [参考文档](https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90)
+> [参考](https://neveryu.github.io/2020/06/10/husky-lint-staged/)
+
+git可以在重要的动作发生时，触发自定义脚本
+- 客户端钩子：由诸如提交和合并这样的操作所调用
+- 服务器端钩子：作用于诸如接收被推送的提交这样的联网操作。
+
+`pre-commit`: 钩子在键入提交信息前运行
+`post-commit`: 钩子在整个提交过程完成后运行。
+
+基本用法：
+```js
+// lint-staged 总是将所有暂存文件的列表传递给任务。
+// 在commit之前，将暂存区的内容进行代码检查，再添加到暂存区，然后commit
+{
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
+```
